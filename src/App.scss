@@ -11,8 +11,15 @@
   }
   .subtitle {
     font-family: 'Consolas', sans-serif ;
-    text-decoration: underline;
+    font-size: 2rem;
     margin: 40px auto;
+    .suffix {
+      color: #ff8400;
+      font-style: italic;
+      span {
+        margin-right: 20px;
+      }
+    }
   }
   form {
     margin: 20px;
@@ -37,9 +44,10 @@
   }
   
   .errorMessage {
-    margin: 50px auto;
-    height: 50px;
-    font-size: 2rem;
+    margin: 20px auto;
+    height: 20px;
+    font-size: 1.5rem;
+    color: red;
   }
 
   .scoreContainer {

@@ -6,7 +6,8 @@ class Input extends React.Component {
     }
 
     handleChange = (event) => {
-        this.setState({ word: event.target.value });
+        if(!event.target.value.includes(' '))
+            this.setState({ word: event.target.value });
     }
 
     handleSubmit = (event) => {
@@ -25,6 +26,7 @@ class Input extends React.Component {
                         placeholder="Type here"
                         value={this.state.word}
                         onChange={this.handleChange}
+                        autoFocus
                     />
                     <button type="submit" onClick={this.handleSubmit}>
                         &#10003;

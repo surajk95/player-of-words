@@ -8,15 +8,32 @@ import './App.scss';
 class App extends React.Component {
   state = {
     errorMessage: '',
-    error: '',
+    error: false,
     words: [],
     score :0,
-    suffix: 'tion'
+    suffix: 'tion',
+    suffixes: [
+      'tion',
+      'sion',
+      'ous',
+      'er',
+      'ment',
+    ],
+  }
+
+  changeSuffix = (value) => {
+    this.setState({
+      suffix: value,
+      score: 0,
+      words: [],
+      error: false,
+      errorMessage: ''
+    });
   }
 
   addWord = (word) => {
     if(!word.toLowerCase().endsWith(this.state.suffix)) {
-      this.setState({ error: true, errorMessage: `Word does not end with 'tion'`});
+      this.setState({ error: true, errorMessage: `Word does not end with ${this.state.suffix}`});
     }
     else if(this.state.words.includes(word)) {
       this.setState({ error: true, errorMessage: `You have already entered that.`});
@@ -33,7 +50,24 @@ class App extends React.Component {
           Word Play
         </div>
         <div className="subtitle">
-          Enter words ending with 'tion'
+          Enter words ending with&nbsp;
+          <div className="suffix">
+            {
+              this.state.suffixes.map((item, index) => {
+                return (
+                <span key={index}>
+                  <input
+                    type="radio"
+                    name="suffix"
+                    checked={this.state.suffix==item}
+                    onChange={()=>this.changeSuffix(item)}
+                  />
+                  {item}
+                </span>
+              )})
+            }
+
+          </div>
         </div>
         <Input addWord={this.addWord} />
         <div className="errorMessage">
