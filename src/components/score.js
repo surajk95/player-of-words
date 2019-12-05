@@ -7,6 +7,10 @@ export default function Score(props) {
             <span className="score">
                 {props.score}
             </span>
+            &nbsp;
+            <span className="speed">
+                at {props.speed} words/second.
+            </span>
         </div>
     )
 }

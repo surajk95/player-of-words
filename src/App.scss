@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400&display=swap');
 .App {
   text-align: center;
   padding: 50px;
+  font-family: 'Source Code Pro';
+  font-weight: 300;
   .header {
-    margin-bottom: 50px;
-    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 40px;
+    font-family: 'Source Code Pro', sans-serif;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 400;
   }
   .subtitle {
-    font-family: 'Consolas', sans-serif ;
     font-size: 2rem;
-    margin: 40px auto;
+    margin: 30px auto;
     .suffix {
       color: #ff8400;
       font-style: italic;
@@ -42,6 +42,15 @@
       cursor: pointer;
     }
   }
+
+  button {
+    background-color: #ff7600;
+      border: none;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      padding: 5px 10px;
+  }
   
   .errorMessage {
     margin: 20px auto;
@@ -53,6 +62,13 @@
   .scoreContainer {
     font-size: 3rem;
     margin: 50px auto;
+    .score {
+      
+    }
+    .speed {
+      font-size: 1.5rem;
+      color: #5eff00;
+    }
   }
 }
 
