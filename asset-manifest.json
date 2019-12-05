@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/word-play/static/css/main.b97c52c7.chunk.css",
+    "main.js": "/word-play/static/js/main.e09c7a3e.chunk.js",
+    "main.js.map": "/word-play/static/js/main.e09c7a3e.chunk.js.map",
+    "runtime-main.js": "/word-play/static/js/runtime-main.26fe19f0.js",
+    "runtime-main.js.map": "/word-play/static/js/runtime-main.26fe19f0.js.map",
+    "static/js/2.8a2d1f71.chunk.js": "/word-play/static/js/2.8a2d1f71.chunk.js",
+    "static/js/2.8a2d1f71.chunk.js.map": "/word-play/static/js/2.8a2d1f71.chunk.js.map",
+    "index.html": "/word-play/index.html",
+    "precache-manifest.dc47928a7b395191f5876d62613d48cc.js": "/word-play/precache-manifest.dc47928a7b395191f5876d62613d48cc.js",
+    "service-worker.js": "/word-play/service-worker.js",
+    "static/css/main.b97c52c7.chunk.css.map": "/word-play/static/css/main.b97c52c7.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26fe19f0.js",
+    "static/js/2.8a2d1f71.chunk.js",
+    "static/css/main.b97c52c7.chunk.css",
+    "static/js/main.e09c7a3e.chunk.js"
+  ]
+}
