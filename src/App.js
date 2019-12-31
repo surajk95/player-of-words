@@ -1,4 +1,6 @@
 import React from 'react';
+import createDictionary from 'dictionary-trie'
+import words from './words_dictionary.json';
 
 import Input from './components/input';
 import Score from './components/score';
@@ -23,6 +25,19 @@ class App extends React.Component {
     speed: 0
   }
 
+  componentDidMount() {
+    import(`./words_dictionary.json`)
+    .then(( Dictionary ) => {
+      let dictionary = Dictionary.default;
+      let words = [];
+      for(let item in dictionary) {
+        words.push(item);
+      }
+      this.setState({ trie: createDictionary(words) });
+      //console.log(`dictionary`, words[100]);
+    });
+  }
+
   resetState = () => {
     this.setState({
       score: 0,
@@ -38,11 +53,15 @@ class App extends React.Component {
   }
 
   addWord = (word) => {
+    //console.log(this.state.trie);
     if(!word.toLowerCase().endsWith(this.state.suffix)) {
       this.setState({ error: true, errorMessage: `Word does not end with ${this.state.suffix}`});
     }
     else if(this.state.words.includes(word)) {
       this.setState({ error: true, errorMessage: `You have already entered that.`});
+    }
+    else if(!this.state.trie.includes(word)) {
+      this.setState({ error: true, errorMessage: `Not an English word.`});
     }
     else {
       if(this.state.score === 0)
