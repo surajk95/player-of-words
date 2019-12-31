@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/word-play/static/css/main.b97c52c7.chunk.css",
-    "main.js": "/word-play/static/js/main.d79c3961.chunk.js",
-    "main.js.map": "/word-play/static/js/main.d79c3961.chunk.js.map",
+    "main.js": "/word-play/static/js/main.9a315014.chunk.js",
+    "main.js.map": "/word-play/static/js/main.9a315014.chunk.js.map",
     "runtime-main.js": "/word-play/static/js/runtime-main.26fe19f0.js",
     "runtime-main.js.map": "/word-play/static/js/runtime-main.26fe19f0.js.map",
     "static/js/2.272056ac.chunk.js": "/word-play/static/js/2.272056ac.chunk.js",
     "static/js/2.272056ac.chunk.js.map": "/word-play/static/js/2.272056ac.chunk.js.map",
     "index.html": "/word-play/index.html",
-    "precache-manifest.9cd8afb7d49d43fe0d9adad98fa911d2.js": "/word-play/precache-manifest.9cd8afb7d49d43fe0d9adad98fa911d2.js",
+    "precache-manifest.b4db5f19b07f76a4d0bf35b27419d4c1.js": "/word-play/precache-manifest.b4db5f19b07f76a4d0bf35b27419d4c1.js",
     "service-worker.js": "/word-play/service-worker.js",
     "static/css/main.b97c52c7.chunk.css.map": "/word-play/static/css/main.b97c52c7.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.26fe19f0.js",
     "static/js/2.272056ac.chunk.js",
     "static/css/main.b97c52c7.chunk.css",
-    "static/js/main.d79c3961.chunk.js"
+    "static/js/main.9a315014.chunk.js"
   ]
 }
