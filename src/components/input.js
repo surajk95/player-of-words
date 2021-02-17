@@ -23,14 +23,11 @@ class Input extends React.Component {
             <>
                 <form onSubmit={this.handleSubmit}>
                     <input
-                        placeholder="Type here"
+                        placeholder="Start typing here"
                         value={this.state.word}
                         onChange={this.handleChange}
                         autoFocus
                     />
-                    <button type="submit" onClick={this.handleSubmit}>
-                        &#10003;
-                    </button>
                 </form>
             </>
         )

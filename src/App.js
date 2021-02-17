@@ -92,15 +92,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="header">
-          Word Play
+          PLAYER OF WORDS
+        </div>
+        <div className="mode">
+          <div className="item" title="future release">single player</div>
+          <div className="item active">zen</div>
+          <div className="item multi" title="future release">multiplayer</div>
         </div>
         <div className="subtitle">
-          Enter words ending with&nbsp;
           <div className="suffix">
+          Enter words ending with&nbsp;&nbsp;
             {
               this.state.suffixes.map((item, index) => {
                 return (
-                <span key={index}>
+                <span key={index} className={this.state.suffix===item ? 'activeSuffix' : ''}>
                   <input
                     type="radio"
                     name="suffix"
@@ -114,7 +119,7 @@ class App extends React.Component {
 
           </div>
         </div>
-        <button onClick={this.resetState}>
+        <button className="reset" onClick={this.resetState}>
           Reset
         </button>
         <Input addWord={this.addWord} />
