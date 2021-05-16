@@ -1,7 +1,7 @@
 {
   "name": "player-of-words",
   "version": "0.1.0",
-  "homepage": "https://surajk95.github.io/player-of-words",
+  "homepage": "https://fvrtrp.github.io/player-of-words",
   "private": true,
   "dependencies": {
     "dictionary-trie": "^1.0.0",

@@ -5,6 +5,8 @@ import words from './words_dictionary.json';
 import Input from './components/input';
 import Score from './components/score';
 
+import MobileContainer from './components/mobile-no-access';
+
 import './App.scss';
 
 class App extends React.Component {
@@ -91,6 +93,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <MobileContainer />
         <div className="header">
           PLAYER OF WORDS
         </div>
